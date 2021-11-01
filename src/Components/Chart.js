@@ -21,14 +21,10 @@ const Chart = () => {
     const getTodos = async () => {
         try{
             const chartData = [];
-<<<<<<< HEAD
             const response = await fetch( "http://ec2-18-117-39-212.us-east-2.compute.amazonaws.com:8000/", {
                 method: "GET",
                 headers : { 'Content-Type' : "application/json"}
             });
-=======
-            const response = await fetch( "http://18.117.39.212:8000/");
->>>>>>> f8fee46fb12fca11b6093161c5d1dc8939495825
             const jsonData = await response.json();
             console.log(jsonData);
             setTodos(jsonData);
