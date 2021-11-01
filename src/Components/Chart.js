@@ -21,7 +21,7 @@ const Chart = () => {
     const getTodos = async () => {
         try{
             const chartData = [];
-            const response = await fetch( "http://localhost:8000/");
+            const response = await fetch( "http://18.117.39.212:8000/");
             const jsonData = await response.json();
             console.log(jsonData);
             setTodos(jsonData);
@@ -59,7 +59,7 @@ const Chart = () => {
     const getEbayData = async () => {
         try{
 
-            const response = await fetch( "http://localhost:8000/ebay");
+            const response = await fetch( "http://18.117.39.212:8000/ebay");
             const jsonData = await response.json();
             console.log(jsonData);
             setEbay(jsonData);
