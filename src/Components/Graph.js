@@ -19,7 +19,7 @@ const Graph = (props) => {
             const nameData = [];
             const priceData = [];
 
-            const response = await fetch( "http://localhost:8000/");
+            const response = await fetch( "http://18.117.39.212:8000/");
             const jsonData = await response.json();
             setData(jsonData);
 
